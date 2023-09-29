@@ -1,9 +1,9 @@
 n = int(input('Введите число:'))
-x = 0
-if n > 0:
-        for i in str(n):
-            if int(i) % 2 == 0:
-                x += int(i)
-        print(x)
-else:
-        print('ошибка')
+a = 0
+
+while n > 0:
+    if n % 2 == 0:
+        a += n % 10
+    n //= 10
+
+print(a)
